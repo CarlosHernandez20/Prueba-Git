@@ -1,0 +1,43 @@
+el comando "cd" te moverá a la carpeta exacta donde quieres inicializar el repositorio git
+
+cd D:/PRUEBA-GIT
+
+Una vez ubicados en la carpeta, debemos inicializar el repositorio:
+
+git init
+
+Luego configurar el usuario y el email, la información de quién sube el repositorio. Dentro del paréntesis van los datos
+
+git config user.name "__"
+
+git config user.email "__"
+
+Luego se debe configurar la ubicación remota del repositorio. Ya sea en GitHub u otros. Toda la url, incluyendo https. El nombre origin es por convencionalismo, es el apodo que se le da al repositorio remoto. Pero puede tener otros.
+
+git remote add origin "_url_"
+
+Ahora se puede sumar el nombre de los archivos. siguiendo los comandos:  El espacio es para el nombre exacto del archivo, incluyendo la extensión. Master es el nombre de la rama, pero puede tener otros nombres
+
+git add "_archivo.ext_"
+
+git commit -m "_aquí va un comentario o nombre del archivo_"
+
+git push -u origin master
+
+
+Ahora bien. Sobre como obtener repositorios remotos en un equipo local.
+
+Inicia la terminal bash de git en la carpeta donde quieras trabajar el repositorio o navega a ella desde la terminal con "cd"
+
+cd C:/Users/aaa/bbbbb/ccc
+
+Ahora con el comando clone podrás copiar todo el repositorio. Debes tener la url del repositorio
+
+git clone "-url-"
+
+Para el PULL. PULL es cuando actualizan solo una rama o archivo puntual en el repositorio. En este caso se usa:
+
+git pull "_apodo_" "-rama_"
+
+ej: git pull origin master
+
