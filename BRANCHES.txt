@@ -1,0 +1,53 @@
+BRANCHES - RAMAS
+
+Las ramas permiten trabajar paralelamente entre las diferentes actualizaciones. 
+
+Para visualizar la rama actual:
+
+git branch
+
+Para agregar rama nueva:
+
+git branch _ramanueva_
+
+Para cambiar nombre a una rama:
+
+git branch -m _antiguonombre_ _nuevonombre_
+
+Para cambiar de una rama a la otra:
+
+git checkout _ramaparatrabajar_
+
+Para eliminar una rama. Debes asegurarte de no estar trabajando directamente en esa rama
+
+git branch -d _ramaeliminar_
+
+
+TIP: 	Para limpiar terminar: clear
+	Para crear un archivo nuevo: touch "_nombre_"
+
+
+Para agregar todos los archivos de una rama: 
+
+git add . 
+
+
+
+Para conocer en qué se diferencia una rama de la otra, utilizamos el comando diff. si en la primera rama faltan archivos que hay en la segunda, dará un mensaje que hay archivos nuevos:
+
+git diff _PrimeraRama_ _SegundaRama_
+
+
+¿Cómo unifico ramas?
+
+git diff rama1 rama2  		=> muestra las diferencias entre una rama y la otra
+
+git checkout ramaAActualizar 	=> cambiar a la rama a actualizar
+
+git merge ramaOrige ramaDestino	=> Cambiar la rama a actualizar
+
+
+Siempre se debe estar en la rama que va a recibir los cambios. La rama menos actualizada
+
+
+
