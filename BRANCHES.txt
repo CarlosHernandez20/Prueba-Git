@@ -48,6 +48,8 @@ git merge ramaOrige ramaDestino	=> Cambiar la rama a actualizar
 
 
 Siempre se debe estar en la rama que va a recibir los cambios. La rama menos actualizada
+	
 
+Terminando...
 
 
